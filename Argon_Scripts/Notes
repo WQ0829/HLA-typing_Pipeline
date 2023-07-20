@@ -2,4 +2,4 @@
 
 
 Throughout the pipeline there are notes to indicate where the user needs to change the paths/directories. Specifcally look for:
-** \## INFORMATION ABOUT PATH \## **
+## INFORMATION ABOUT PATH ##
