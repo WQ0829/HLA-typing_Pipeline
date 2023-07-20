@@ -1,5 +1,34 @@
 #Notes for Pipeline
 
+##
+Required prior to this pipeline:
+-miniconda3
+-perlbrew —> perl version?
+-python version?
+-metawrap version? yaml file
+-
+
+Notes:
+yaml for all env:
+—env: metawrap, hlaminer 
+
+
+Manipulation:
+Change clean reads to file name
+Change csv file to file name
+
+HLA miner:
+What to do here
+-blastn
+-bwa
+-searchBIO
+
+~ change all paths 
+—perl
+—bwa
+—path to files (NOT PATIENT.FOF)
+##
+
 
 Throughout MetaWrap_HLAMiner_Pipeline.sh there are notes to indicate where the user needs to change the paths/directories. 
 Specifcally look for:
