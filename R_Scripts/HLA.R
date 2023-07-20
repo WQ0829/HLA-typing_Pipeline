@@ -1,4 +1,4 @@
-# HLA Subtype Graph
+# HLA Top 2 Predictions
 # Wan Qian Siew
 # 07/17/2023
 
@@ -11,7 +11,7 @@ library(ggplot2); packageVersion("ggplot2")   # version 3.4.2
 
 #### Filter Predictions in HC (Keep DRB1) ####
 
-# Set the working directory to the specified directory
+# Set the working directory to the specified directory that contains CSV files for HC
 setwd("/Users/wanqian/argonFiles/HLA_HC_CSV")
 
 # Get the list of CSV files in the directory
@@ -66,7 +66,7 @@ for (csv_file in csv_files) {
 
 #### HC Box Plot (All Predictions in modified CSV Files) ####
 
-# Set the working directory to the specified directory
+# Set the working directory to the specified directory that contains CSV file for MS
 setwd("/Users/wanqian/argonFiles/HLA_HC_CSV")
 directory <- "/Users/wanqian/argonFiles/HLA_HC_CSV"
 
@@ -101,7 +101,7 @@ print(HC_boxPlot)
 #### Filter Predictions in MS (Keep DRB1) ####
 
 # Moving on the MS patient CSV Files
- # Set the working directory to the specified directory
+ # Set the working directory to the specified directory that contain MS CSV files
  setwd("/Users/wanqian/argonFiles/HLA_MS_CSV")
  
  # Get the list of CSV files in the directory
@@ -156,7 +156,7 @@ print(HC_boxPlot)
  
  #### MS Box Plot (All Predictions in modified CSV File) ####
  
- # Set the working directory to the specified directory
+ # Set the working directory to the specified directory that contains MS CSV files
  setwd("/Users/wanqian/argonFiles/HLA_MS_CSV")
  directory <- "/Users/wanqian/argonFiles/HLA_MS_CSV"
  
@@ -460,7 +460,7 @@ print(HC_boxPlot)
   
   # The code below is similar to filtering top 2 predictions, you can just modify the filtering prediction code to add a column 
   
-  # Set the working directory to the specified directory
+  # Set the working directory to the specified directory that contains HC Prediction output
   setwd("/Users/wanqian/argonFiles")
   
   # Read the CSV file
@@ -491,7 +491,7 @@ print(HC_boxPlot)
   print(formatted_data)
   
   
-  # Set the working directory to the specified directory
+  # Set the working directory to the specified directory that contains MS prediction output
   setwd("/Users/wanqian/argonFiles")
   
   # Read the CSV file
