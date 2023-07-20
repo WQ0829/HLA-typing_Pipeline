@@ -13,7 +13,7 @@ mkdir -p rawSequences
 
 # Change to the directory containing the zip files
 ## CHANGE DIRECTORY BASED ON YOU FILE LOCATION ##
-cd /nfsscratch/wanqian/data
+cd /nfsscratch/YOURUSERNAME/data
 
 #Find all .fq.gz files in the current directory 
 find . -name "*.fq.gz" -type f | while read -r file; do
@@ -25,7 +25,7 @@ find . -name "*.fq.gz" -type f | while read -r file; do
     suffix="${base_filename#*_}"
     
     # Create the output directory if it doesn't exist
-    output_dir="/nfsscratch/wanqian/rawSequences/$prefix"
+    output_dir="/nfsscratch/YOURUSERNAME/rawSequences/$prefix"
     mkdir -p "$output_dir"
    
     # Determine the output filename based on the suffix
@@ -36,7 +36,8 @@ find . -name "*.fq.gz" -type f | while read -r file; do
 done
 
 #Clean the Sequences (store in /nfsscratch/..-mWPipeline/read_qc)
-samples_path="/nfsscratch/wanqian/rawSequences"
+## CHANGE DIRECTORY BASED ON YOU FILE LOCATION ##
+samples_path="/nfsscratch/YOURUSERNAME/rawSequences"
 
 project=$(basename "$samples_path")-mwPipeline
 scratch=/nfsscratch/$project
@@ -46,7 +47,8 @@ mkdir $scratch
 
 samples=$(basename -s _1.fq -a "$samples_path"/*_1.fq)
 
-source /Users/wsiew/miniconda3/bin/activate
+## CHANGE TO YOUR OWN PATH TO MINICONDA ##
+source /Users/YOURUSERNAME/miniconda3/bin/activate
 conda activate metawrap-env
 
 mkdir $qc
@@ -71,8 +73,9 @@ done
 
 #Loop Grab Host_Reads and Rename them
 # Specify the directory
+## CHANGE DIRECTORY BASED ON YOU FILE LOCATION ##
 base_dir="/nfsscratch/rawSequences-mwPipeline/read_qc"
-dest_dir="/nfsscratch/wanqian/hostSequences"
+dest_dir="/nfsscratch/YOURUSERNAME/hostSequences"
 
 # Loop through the directories
 for dir in "$base_dir"/*/; do
@@ -119,7 +122,8 @@ for dir in "$base_dir"/*/; do
 	cd .. || exit
 done
 #Loop for HLAMiner
-base_Directory="/nfsscratch/wanqian/hostSequences"
+## CHANGE DIRECTORY BASED ON YOU FILE LOCATION ##
+base_Directory="/nfsscratch/YOURUSERNAME/hostSequences"
 #Iterate over subdirectories
 for subdir in "$base_Directory"/*/; do
 	cd "$subdir" || continue
@@ -141,9 +145,10 @@ for subdir in "$base_Directory"/*/; do
 	echo "File one $file1"
 	echo "File two $file2"
 	#Replace the file paths in HLAMiner
+ 	## CHANGE TO YOUR OWN PATH TO MINICONDA ##
 	source ~/miniconda3/bin/activate
 	conda activate HLAMiner01
-	cd /Users/wsiew/HLAminer-1.4/HLAminer_v1.4/bin
+	cd /Users/YOURUSERNAME/HLAminer-1.4/HLAminer_v1.4/bin
 
 	command1="~/miniconda3/envs/HLAMiner01/bin/bwa aln -e 0 -o 0 ../database/HLA-I_II_GEN.fasta $(realpath "$file1") > aln_test.1.sai"
     	command2="~/miniconda3/envs/HLAMiner01/bin/bwa aln -e 0 -o 0 ../database/HLA-I_II_GEN.fasta $(realpath "$file2") > aln_test.2.sai"
@@ -164,10 +169,12 @@ for subdir in "$base_Directory"/*/; do
 	../bin/HLAminer.pl -a aln.sam -h ../database/HLA-I_II_GEN.fasta -s 500 -l "$subdir_name" "$subdir_name"
 
 	# Create the directory for CSV files
-	csv_directory="/nfsscratch/wanqian/HLACSV_File"
+ 	## CHANGE DIRECTORY BASED ON YOU FILE LOCATION ##
+	csv_directory="/nfsscratch/YOURUSERNAME/HLACSV_File"
 
 	# Create the directory for log files
-	log_directory="/nfsscratch/wanqian/HLALOG_File"
+ 	## CHANGE DIRECTORY BASED ON YOU FILE LOCATION ##
+	log_directory="/nfsscratch/YOURUSERNAME/HLALOG_File"
 
 	#Make directory for both csv and log
 	mkdir -p "$csv_directory"
