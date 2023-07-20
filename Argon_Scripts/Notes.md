@@ -15,11 +15,11 @@ Before running the pipeline you will need to install the following:
 *HLAminer* (HLAMiner01.yml file included or use: https://github.com/bcgsc/HLAminer) # make a conda environment for *HLAminer*
 
 ### metaWRAP Notes: ###
-You must set up the bmtagger database, none of the other databases are necessary for this analysis. 
+You must set up the *bmtagger* database, none of the other databases are necessary for this analysis. 
 (https://github.com/bxlab/metaWRAP/blob/master/installation/database_installation.md)
 
 ### HLAminer Notes: ###
-Once these are all set up change the path names in the necessary scripts from hlaminer. This includes
+Once these are all set up change the path names in the necessary scripts from HLAminer. This includes
 your perl and bwa paths.
 (.pl and .sh files in *"/Users/YOURUSERNAME/HLAminer-1.4/HLAminer_v1.4/bin/"*)
 
