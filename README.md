@@ -10,7 +10,9 @@ This bioinformatics workflow was written by Wan Qian Siew during the IIHG summer
 
 
 **Citations:**
+
 [1] Uritskiy, G.V., DiRuggiero, J. & Taylor, J. MetaWRAP—a flexible pipeline for genome-resolved metagenomic data analysis. Microbiome 6, 158 (2018). https://doi.org/10.1186/s40168-018-0541-1
+
 [2] Warren RL, Choe G, Freeman DJ, Castellarin M, Munro S, Moore R, Holt 
 RA.  2012. Derivation of HLA types from shotgun sequence datasets. 
 Genome Med. 4:95
