@@ -3,10 +3,15 @@
 This pipeline will require a lot of computational resources, utilize your University's super computer (Argon for U of Iowa).
 
 Before running the pipeline you will need to install the following:
-\n*miniconda3* version 4.11.0
-\n*perlbrew* followed by *perl* version 5.16.3
+
+*miniconda3* version 4.11.0
+
+*perlbrew* followed by *perl* version 5.16.3
+
 *python* version 3.7.0
+
 *metaWRAP* (.yml file included or use: https://github.com/bxlab/metaWRAP) # make a conda enviornment for *metaWRAP*
+
 *HLAminer* (.yml file included or use: https://github.com/bcgsc/HLAminer) # make a conda environment for *HLAminer*
 
 ### metaWRAP Notes:###
