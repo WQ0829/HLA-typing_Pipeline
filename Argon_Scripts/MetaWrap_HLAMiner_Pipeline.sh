@@ -12,6 +12,7 @@
 mkdir -p rawSequences
 
 # Change to the directory containing the zip files
+## CHANGE DIRECTORY BASED ON YOU FILE LOCATION ##
 cd /nfsscratch/wanqian/data
 
 #Find all .fq.gz files in the current directory 
