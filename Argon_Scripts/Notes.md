@@ -28,6 +28,7 @@ Also download all necessary packages (fully described on github page). This incl
 - bwa
 - perl-bio-searchio-hmmer
 
+### Other: ###
 Throughout *MetaWrap_HLAMiner_Pipeline.sh* there are notes to indicate where the user needs to change the paths/directories. 
 Specifcally look for:
 
