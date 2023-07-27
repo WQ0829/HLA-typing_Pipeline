@@ -16,6 +16,3 @@ This bioinformatics workflow was written by Wan Qian Siew during the IIHG summer
 [2] Warren RL, Choe G, Freeman DJ, Castellarin M, Munro S, Moore R, Holt 
 RA.  2012. Derivation of HLA types from shotgun sequence datasets. 
 Genome Med. 4:95
-
-
-<img width="1421" alt="Screenshot 2023-07-20 at 3 33 07 PM" src="https://github.com/WQ0829/HLA-typing_Pipeline/assets/136344785/45be87e5-d977-45b3-abf4-012f79973a23">
