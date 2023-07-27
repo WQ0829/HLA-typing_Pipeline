@@ -2,7 +2,7 @@
 
 This bioinformatics workflow was written by Wan Qian Siew during the IIHG summer internship in the Mangalam Lab at the University of Iowa. The goal was to take shotgun sequence data and identify the HLA class II DRB1 subtype from each sample. We specifically utilized _metaWRAP_[1] and _HLAminer_[2] on the University of Iowa's HPC. We also included the R scripts for filtering top predictions from the _hlaminer_ output.
 
-![alt text](http://github.com/WQ0829/HLA-typing_Pipeline/blob/main/Argon_Scripts/Screenshot%202023-07-20%20at%203.33.07%20PM.png)
+![alt text](http://github.com/WQ0829/HLA-typing_Pipeline/blob/main/Argon_Scripts/Screenshot%202023-07-20%20at%203.33.07%20PM.png?raw=true)
 
 **See notes in HLA-typing_Pipeline/Argon_Scripts/Notes.md and follow the instructions before starting**
 
